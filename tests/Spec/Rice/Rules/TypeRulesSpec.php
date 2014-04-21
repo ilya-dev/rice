@@ -50,7 +50,7 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->float(42.000000000001)->shouldReturn(true);
     }
 
-    function it_determines_whether_the__object_is_an_instance_of_the_class()
+    function it_determines_whether_the_object_is_an_instance_of_the_class()
     {
         $this->instance(new \stdClass, 'fdsfgaga')->shouldReturn(false);
 
