@@ -9,8 +9,10 @@
             "email": "public.ilya.s@gmail.com"
         }
     ],
-    "require": {
-
+    "autoload": {
+        "psr-4": {
+            "Rice\\": "src/Rice/"
+        }
     },
     "require-dev": {
         "phpspec/phpspec": "~2"
