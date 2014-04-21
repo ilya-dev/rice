@@ -59,6 +59,17 @@ class TypeRules {
     }
 
     /**
+     * Determine whether the given value is null.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function null($value)
+    {
+        return \is_null($value);
+    }
+
+    /**
      * Determine whether the given value is a date.
      *
      * @param mixed $value

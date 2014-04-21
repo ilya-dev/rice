@@ -66,6 +66,13 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->integer(10)->shouldReturn(true);
     }
 
+    function it_detects_a_null_value()
+    {
+        $this->null(null)->shouldReturn(true);
+
+        $this->null(false)->shouldReturn(false);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {
