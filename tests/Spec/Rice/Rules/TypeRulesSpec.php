@@ -43,6 +43,13 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->date('dsdsggshsg', 'cierkjd')->shouldReturn(false);
     }
 
+    function it_detects_a_float()
+    {
+        $this->float(42)->shouldReturn(false);
+
+        $this->float(42.000000000001)->shouldReturn(true);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {

@@ -25,7 +25,18 @@ class TypeRules {
     }
 
     /**
-     * Determine whether the given value is a date
+     * Determine whether the given value is a float.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function float($value)
+    {
+        return \is_float($value);
+    }
+
+    /**
+     * Determine whether the given value is a date.
      *
      * @param mixed $value
      * @param string|null $format
