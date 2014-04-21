@@ -92,6 +92,17 @@ class TypeRules {
     }
 
     /**
+     * Determine whether the given value is numeric.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function numeric($value)
+    {
+        return \is_numeric($value);
+    }
+
+    /**
      * Determine whether the given value is a date.
      *
      * @param mixed $value

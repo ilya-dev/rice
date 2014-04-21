@@ -87,6 +87,17 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->object(new \stdClass)->shouldReturn(true);
     }
 
+    function it_detects_a_numeric()
+    {
+        $this->numeric(11)->shouldReturn(true);
+
+        $this->numeric('2')->shouldReturn(true);
+
+        $this->numeric(55.6)->shouldReturn(true);
+
+        $this->numeric('')->shouldReturn(false);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {
