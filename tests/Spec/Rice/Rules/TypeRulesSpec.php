@@ -28,6 +28,21 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->boolean(true)->shouldReturn(true);
     }
 
+    function it_detects_a_date()
+    {
+        $this->date(new \DateTime)->shouldReturn(true);
+
+        $this->date('2014-04-22')->shouldReturn(true);
+
+        $this->date('22-2014-04', 'd-Y-m')->shouldReturn(true);
+
+        $this->date(null)->shouldReturn(false);
+
+        $this->date('fdfdfdfsg')->shouldReturn(false);
+
+        $this->date('dsdsggshsg', 'cierkjd')->shouldReturn(false);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {
