@@ -10,5 +10,22 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->shouldHaveType('Rice\Rules\TypeRules');
     }
 
+    function it_detects_a_traversable()
+    {
+        $this->traversable(null)->shouldReturn(false);
+
+        $this->traversable([1, 2, 3])->shouldReturn(true);
+
+        $this->traversable(new \stdClass)->shouldReturn(false);
+
+        $this->traversable(new DummyTraversable)->shouldReturn(true);
+    }
+
+}
+
+class DummyTraversable implements \IteratorAggregate {
+
+    public function getIterator() {}
+
 }
 
