@@ -36,6 +36,18 @@ class TypeRules {
     }
 
     /**
+     * Determine whether the $value is an instance of $name.
+     *
+     * @param mixed $value
+     * @param string $name
+     * @return boolean
+     */
+    public function instance($value, $name)
+    {
+        return $value instanceof $name;
+    }
+
+    /**
      * Determine whether the given value is a date.
      *
      * @param mixed $value
