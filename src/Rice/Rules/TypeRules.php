@@ -70,6 +70,17 @@ class TypeRules {
     }
 
     /**
+     * Determine whether the given value is a string.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function string($value)
+    {
+        return \is_string($value);
+    }
+
+    /**
      * Determine whether the given value is a date.
      *
      * @param mixed $value

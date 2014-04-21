@@ -73,6 +73,13 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->null(false)->shouldReturn(false);
     }
 
+    function it_detects_a_string()
+    {
+        $this->string([])->shouldReturn(false);
+
+        $this->string('foo')->shouldReturn(true);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {
