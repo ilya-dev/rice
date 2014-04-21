@@ -21,6 +21,13 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->traversable(new DummyTraversable)->shouldReturn(true);
     }
 
+    function it_detects_a_boolean_value()
+    {
+        $this->boolean(null)->shouldReturn(false);
+
+        $this->boolean(true)->shouldReturn(true);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {
