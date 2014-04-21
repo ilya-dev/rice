@@ -48,6 +48,17 @@ class TypeRules {
     }
 
     /**
+     * Determine whether the given value is an integer.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function integer($value)
+    {
+        return \is_int($value);
+    }
+
+    /**
      * Determine whether the given value is a date.
      *
      * @param mixed $value
