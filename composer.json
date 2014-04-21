@@ -1,10 +1,8 @@
 {
     "name": "ilya/rice",
     "description": "Rice is a validation engine for PHP",
-    "require-dev": {
-        "phpspec/phpspec": "~2"
-    },
     "license": "MIT",
+    "keywords": ["validation", "engine", "validator"],
     "authors": [
         {
             "name": "Ilya S",
@@ -13,5 +11,8 @@
     ],
     "require": {
 
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2"
     }
 }
