@@ -81,6 +81,17 @@ class TypeRules {
     }
 
     /**
+     * Determine whether the given value is an object.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function object($value)
+    {
+        return \is_object($value);
+    }
+
+    /**
      * Determine whether the given value is a date.
      *
      * @param mixed $value

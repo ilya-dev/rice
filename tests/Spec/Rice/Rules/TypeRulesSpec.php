@@ -80,6 +80,13 @@ class TypeRulesSpec extends ObjectBehavior {
         $this->string('foo')->shouldReturn(true);
     }
 
+    function it_detects_an_object()
+    {
+        $this->object('stdClass')->shouldReturn(false);
+
+        $this->object(new \stdClass)->shouldReturn(true);
+    }
+
 }
 
 class DummyTraversable implements \IteratorAggregate {
