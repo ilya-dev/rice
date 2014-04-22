@@ -14,6 +14,18 @@ class NumericRules {
     }
 
     /**
+     * Determine whether the $value is 1 * $of.
+     *
+     * @param mixed $value
+     * @param integer $of
+     * @return boolean
+     */
+    public function multiple($value, $of)
+    {
+        return \is_numeric($value) and 0 == ($value % $of);
+    }
+
+    /**
      * Determine whether the given value is positive.
      *
      * @param mixed $value

@@ -74,5 +74,14 @@ class NumericRulesSpec extends ObjectBehavior {
         $this->square(9)->shouldReturn(true);
     }
 
+    function it_detects_something()
+    {
+        $this->multiple(null, 0)->shouldReturn(false);
+
+        $this->multiple(11, 3)->shouldReturn(false);
+
+        $this->multiple(12, 3)->shouldReturn(true);
+    }
+
 }
 

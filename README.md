@@ -30,7 +30,7 @@ Currently I am working on the first release of Rice.
   + odd `[done]`
   + even `[done]`
   + prime `[done]`
-  + multiple
+  + multiple `[done]`
   + positive `[done]`
   + negative `[done]`
   + notEmpty
