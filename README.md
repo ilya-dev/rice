@@ -33,12 +33,10 @@ Currently I am working on the first release of Rice.
   + multiple `[done]`
   + positive `[done]`
   + negative `[done]`
-  + notEmpty
   + square `[done]`
 
 + **String**
   + lowercase
-  + notEmpty
   + uppercase
   + between
   + charset
@@ -53,7 +51,6 @@ Currently I am working on the first release of Rice.
   + contains
   + in
   + length
-  + notEmpty
   + key
 
 + **Object**
@@ -78,3 +75,7 @@ Currently I am working on the first release of Rice.
   + json
   + phone
   + mac
+
+## Additional information
+
+The code is licensed under the MIT license.
