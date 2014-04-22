@@ -12,7 +12,7 @@ class ComparingRules {
      */
     public function between($value, $min, $max)
     {
-        return ($value >= $min) and ($max >= $value);
+        return \is_numeric($value) and ($value >= $min) and ($max >= $value);
     }
 
     /**
