@@ -10,5 +10,14 @@ class ComparingRulesSpec extends ObjectBehavior {
         $this->shouldHaveType('Rice\Rules\ComparingRules');
     }
 
+    function it_checks_whether_the_value_is_in_a_range()
+    {
+        $this->between(5, 3, 7)->shouldReturn(true);
+
+        $this->between(3, 3, 5)->shouldReturn(true);
+
+        $this->between(2, 3, 4)->shouldReturn(false);
+    }
+
 }
 
