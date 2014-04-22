@@ -9,16 +9,16 @@ Currently I am working on the first release of Rice.
 ### Validators [0.1.0]
 
 + **Type**
-  + traversable
-  + boolean
-  + float
-  + instance
-  + integer
-  + null
-  + string
-  + object
-  + numeric
-  + date
+  + traversable `[done]`
+  + boolean `[done]`
+  + float `[done]`
+  + instance `[done]`
+  + integer `[done]`
+  + null `[done]`
+  + string `[done]`
+  + object `[done]`
+  + numeric `[done]`
+  + date `[done]`
 
 + **Comparing values**
   + between
@@ -27,9 +27,9 @@ Currently I am working on the first release of Rice.
   + equals
 
 + **Numeric**
-  + odd
-  + even
-  + prime
+  + odd `[done]`
+  + even `[done]`
+  + prime `[done]`
   + multiple
   + positive
   + negative
