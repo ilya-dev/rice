@@ -39,5 +39,17 @@ class ComparingRules {
         return \is_numeric($value) and ($value >= $min);
     }
 
+    /**
+     * Check whether the given value is not higher than the maximum value.
+     *
+     * @param mixed $value
+     * @param integer $max
+     * @return boolean
+     */
+    public function max($value, $max)
+    {
+        return \is_numeric($value) and ($max >= $value);
+    }
+
 }
 

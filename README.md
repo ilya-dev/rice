@@ -23,7 +23,7 @@ Currently I am working on the first release of Rice.
 + **Comparing values**
   + between `[done]`
   + min `[done]`
-  + max
+  + max `[done]`
   + equals `[done]`
 
 + **Numeric**

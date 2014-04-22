@@ -39,5 +39,16 @@ class ComparingRulesSpec extends ObjectBehavior {
         $this->min(5, 3)->shouldReturn(true);
     }
 
+    function it_checks_the_maximum_value()
+    {
+        $this->max(null, 0)->shouldReturn(false);
+
+        $this->max(7, 5)->shouldReturn(false);
+
+        $this->max(5, 5)->shouldReturn(true);
+
+        $this->max(3, 5)->shouldReturn(true);
+    }
+
 }
 
