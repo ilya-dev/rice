@@ -28,5 +28,22 @@ class NumericRulesSpec extends ObjectBehavior {
         $this->even(2)->shouldReturn(true);
     }
 
+    function it_detects_prime_numbers()
+    {
+        $this->prime(null)->shouldReturn(false);
+
+        $this->prime(2)->shouldReturn(true);
+
+        $this->prime(1)->shouldReturn(false);
+
+        $this->prime(4)->shouldReturn(false);
+
+        $this->prime(41)->shouldReturn(true);
+
+        $this->prime(54)->shouldReturn(false);
+
+        $this->prime(67)->shouldReturn(true);
+    }
+
 }
 
