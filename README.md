@@ -57,7 +57,7 @@ Currently I am working on the first release of Rice.
   + key
 
 + **Object**
-  + length
+  + length `[done]`
   + attribute
 
 + **Date**
