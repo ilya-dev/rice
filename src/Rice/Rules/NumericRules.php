@@ -21,7 +21,7 @@ class NumericRules {
      */
     public function odd($value)
     {
-        return \is_int($value) and ($value & 1);
+        return \is_numeric($value) and ($value & 1);
     }
 
     /**
@@ -32,7 +32,7 @@ class NumericRules {
      */
     public function even($value)
     {
-        return \is_int($value) and ! ($value & 1);
+        return \is_numeric($value) and ! ($value & 1);
     }
 
     /**
@@ -43,7 +43,7 @@ class NumericRules {
      */
     public function prime($value)
     {
-        if ( ! \is_int($value))
+        if ( ! \is_numeric($value))
         {
             return false;
         }
