@@ -13,5 +13,16 @@ class FileRules {
         return \is_string($file) and \is_uploaded_file($file);
     }
 
+    /**
+     * Determine whether the path exists.
+     *
+     * @param mixed $path
+     * @return boolean
+     */
+    public function exists($path)
+    {
+        return \is_string($path) and \file_exists($path);
+    }
+
 }
 

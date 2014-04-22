@@ -17,5 +17,16 @@ class FileRulesSpec extends ObjectBehavior {
         $this->uploaded('foo')->shouldReturn(false);
     }
 
+    function it_determines_whether_a_file_exists()
+    {
+        $this->exists(null)->shouldReturn(false);
+
+        $this->exists(__DIR__)->shouldReturn(true);
+
+        $this->exists(\uniqid())->shouldReturn(false);
+
+        $this->exists(__FILE__)->shouldReturn(true);
+    }
+
 }
 
