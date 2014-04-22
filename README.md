@@ -32,7 +32,7 @@ Currently I am working on the first release of Rice.
   + prime `[done]`
   + multiple
   + positive `[done]`
-  + negative
+  + negative `[done]`
   + notEmpty
   + square
 

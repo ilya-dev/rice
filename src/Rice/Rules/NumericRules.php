@@ -14,6 +14,17 @@ class NumericRules {
     }
 
     /**
+     * Determine whether the given value is negative.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function negative($value)
+    {
+        return \is_numeric($value) and $value <= 0;
+    }
+
+    /**
      * Determine whether the given value is odd.
      *
      * @param mixed $value

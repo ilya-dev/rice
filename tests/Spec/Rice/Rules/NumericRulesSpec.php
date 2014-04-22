@@ -56,5 +56,16 @@ class NumericRulesSpec extends ObjectBehavior {
         $this->positive(0)->shouldReturn(true);
     }
 
+    function it_detects_negative_numbers()
+    {
+        $this->negative(null)->shouldReturn(false);
+
+        $this->negative(0)->shouldReturn(true);
+
+        $this->negative(-12)->shouldReturn(true);
+
+        $this->negative(23)->shouldReturn(false);
+    }
+
 }
 
