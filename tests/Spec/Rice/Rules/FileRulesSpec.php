@@ -10,5 +10,12 @@ class FileRulesSpec extends ObjectBehavior {
         $this->shouldHaveType('Rice\Rules\FileRules');
     }
 
+    function it_determines_whether_a_file_was_uploaded()
+    {
+        $this->uploaded(null)->shouldReturn(false);
+
+        $this->uploaded('foo')->shouldReturn(false);
+    }
+
 }
 

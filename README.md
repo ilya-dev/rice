@@ -69,7 +69,7 @@ Currently I am working on the first release of Rice.
   + exists
   + readable
   + writable
-  + uploaded
+  + uploaded `[done]`
 
 + **Other**
   + email
