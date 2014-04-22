@@ -53,5 +53,12 @@ class FileRulesSpec extends ObjectBehavior {
         $this->readable(__FILE__)->shouldReturn(true);
     }
 
+    function it_checks_whether_a_path_is_writable()
+    {
+        $this->writable(null)->shouldReturn(false);
+
+        $this->writable(__FILE__)->shouldReturn(true);
+    }
+
 }
 

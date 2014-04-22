@@ -57,5 +57,16 @@ class FileRules {
         return \is_string($path) and \is_readable($path);
     }
 
+    /**
+     * Determine whether the (destination) path is writable.
+     *
+     * @param mixed $path
+     * @return boolean
+     */
+    public function writable($path)
+    {
+        return \is_string($path) and \is_writable($path);
+    }
+
 }
 

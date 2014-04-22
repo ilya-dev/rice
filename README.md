@@ -68,7 +68,7 @@ Currently I am working on the first release of Rice.
   + file `[done]`
   + exists `[done]`
   + readable `[done]`
-  + writable
+  + writable `[done]`
   + uploaded `[done]`
 
 + **Other**
