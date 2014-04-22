@@ -37,5 +37,14 @@ class FileRulesSpec extends ObjectBehavior {
         $this->directory(__DIR__)->shouldReturn(true);
     }
 
+    function it_checks_whether_the_path_points_to_a_file()
+    {
+        $this->file(null)->shouldReturn(false);
+
+        $this->file(__DIR__)->shouldReturn(false);
+
+        $this->file(__FILE__)->shouldReturn(true);
+    }
+
 }
 
