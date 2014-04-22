@@ -23,5 +23,14 @@ class ObjectRulesSpec extends ObjectBehavior {
         $this->length($object, 3)->shouldReturn(false);
     }
 
+    function it_checks_whether_the_object_has_an_attribute()
+    {
+        $object = (object) ['foo' => 'bar'];
+
+        $this->attribute('baz', $object)->shouldReturn(false);
+
+        $this->attribute('foo', $object)->shouldReturn(true);
+    }
+
 }
 

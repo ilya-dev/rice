@@ -58,7 +58,7 @@ Currently I am working on the first release of Rice.
 
 + **Object**
   + length `[done]`
-  + attribute
+  + attribute `[done]` 
 
 + **Date**
   + between

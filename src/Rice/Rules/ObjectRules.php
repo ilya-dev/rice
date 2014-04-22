@@ -17,5 +17,17 @@ class ObjectRules {
         return $max ? ($amount >= $min and $amount <= $max) : ($amount >= $min);
     }
 
+    /**
+     * Check whether the $object has an attribute called $name.
+     *
+     * @param string $name
+     * @param mixed $object
+     * @return boolean
+     */
+    public function attribute($name, $object)
+    {
+        return \property_exists($object, $name);
+    }
+
 }
 
