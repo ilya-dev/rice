@@ -10,5 +10,18 @@ class ObjectRulesSpec extends ObjectBehavior {
         $this->shouldHaveType('Rice\Rules\ObjectRules');
     }
 
+    function it_calculates_the_length_of_object()
+    {
+        $object = (object) ['foo' => 'bar', 'baz' => 'wow'];
+
+        $this->length($object, 0, 2)->shouldReturn(true);
+
+        $this->length($object, 2)->shouldReturn(true);
+
+        $this->length($object, 2, 4)->shouldReturn(true);
+
+        $this->length($object, 3)->shouldReturn(false);
+    }
+
 }
 
