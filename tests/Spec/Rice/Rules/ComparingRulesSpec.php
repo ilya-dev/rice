@@ -19,5 +19,14 @@ class ComparingRulesSpec extends ObjectBehavior {
         $this->between(2, 3, 4)->shouldReturn(false);
     }
 
+    function it_compares_two_values()
+    {
+        $this->equals(12, 15)->shouldReturn(false);
+
+        $this->equals(12, '12')->shouldReturn(false);
+
+        $this->equals(12, 12)->shouldReturn(true);
+    }
+
 }
 

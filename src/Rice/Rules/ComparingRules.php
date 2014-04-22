@@ -15,5 +15,17 @@ class ComparingRules {
         return ($value >= $min) and ($max >= $value);
     }
 
+    /**
+     * Compare $left and $right (strict).
+     *
+     * @param mixed $left
+     * @param mixed $right
+     * @return boolean
+     */
+    public function equals($left, $right)
+    {
+        return ($left) === $right;
+    }
+
 }
 

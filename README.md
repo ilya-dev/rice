@@ -24,7 +24,7 @@ Currently I am working on the first release of Rice.
   + between `[done]`
   + min
   + max
-  + equals
+  + equals `[done]`
 
 + **Numeric**
   + odd `[done]`
