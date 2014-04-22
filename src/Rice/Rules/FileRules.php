@@ -24,5 +24,16 @@ class FileRules {
         return \is_string($path) and \file_exists($path);
     }
 
+    /**
+     * Determine whether the given path points to a directory.
+     *
+     * @param mixed $path
+     * @return boolean
+     */
+    public function directory($path)
+    {
+        return \is_string($path) and \is_dir($path);
+    }
+
 }
 
