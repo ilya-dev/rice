@@ -3,6 +3,17 @@
 class NumericRules {
 
     /**
+     * Determine whether the given value is a "perfect" square.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function square($value)
+    {
+        return \is_numeric($value) and (\sqrt($value) * \sqrt($value) == $value);
+    }
+
+    /**
      * Determine whether the given value is positive.
      *
      * @param mixed $value

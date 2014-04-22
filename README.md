@@ -34,7 +34,7 @@ Currently I am working on the first release of Rice.
   + positive `[done]`
   + negative `[done]`
   + notEmpty
-  + square
+  + square `[done]`
 
 + **String**
   + lowercase

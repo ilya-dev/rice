@@ -67,5 +67,12 @@ class NumericRulesSpec extends ObjectBehavior {
         $this->negative(23)->shouldReturn(false);
     }
 
+    function it_detects_perfect_squares()
+    {
+        $this->square(6)->shouldReturn(false);
+
+        $this->square(9)->shouldReturn(true);
+    }
+
 }
 
