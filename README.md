@@ -21,7 +21,7 @@ Currently I am working on the first release of Rice.
   + date `[done]`
 
 + **Comparing values**
-  + between
+  + between `[done]`
   + min
   + max
   + equals
