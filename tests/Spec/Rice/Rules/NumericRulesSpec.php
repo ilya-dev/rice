@@ -45,5 +45,16 @@ class NumericRulesSpec extends ObjectBehavior {
         $this->prime(67)->shouldReturn(true);
     }
 
+    function it_detects_positive_numbers()
+    {
+        $this->positive(null)->shouldReturn(false);
+
+        $this->positive(41)->shouldReturn(true);
+
+        $this->positive(-542)->shouldReturn(false);
+
+        $this->positive(0)->shouldReturn(true);
+    }
+
 }
 

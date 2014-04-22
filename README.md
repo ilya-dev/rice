@@ -31,7 +31,7 @@ Currently I am working on the first release of Rice.
   + even `[done]`
   + prime `[done]`
   + multiple
-  + positive
+  + positive `[done]`
   + negative
   + notEmpty
   + square

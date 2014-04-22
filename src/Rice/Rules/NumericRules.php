@@ -3,6 +3,17 @@
 class NumericRules {
 
     /**
+     * Determine whether the given value is positive.
+     *
+     * @param mixed $value
+     * @return boolean
+     */
+    public function positive($value)
+    {
+        return \is_numeric($value) and $value >= 0;
+    }
+
+    /**
      * Determine whether the given value is odd.
      *
      * @param mixed $value
