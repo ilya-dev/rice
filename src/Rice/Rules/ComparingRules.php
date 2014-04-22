@@ -27,5 +27,17 @@ class ComparingRules {
         return ($left) === $right;
     }
 
+    /**
+     * Check whether the given value is higher than the minimum value.
+     *
+     * @param mixed $value
+     * @param integer $min
+     * @return boolean
+     */
+    public function min($value, $min)
+    {
+        return \is_numeric($value) and ($value >= $min);
+    }
+
 }
 

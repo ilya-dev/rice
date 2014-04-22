@@ -28,5 +28,16 @@ class ComparingRulesSpec extends ObjectBehavior {
         $this->equals(12, 12)->shouldReturn(true);
     }
 
+    function it_checks_the_minimum_value()
+    {
+        $this->min(null, 0)->shouldReturn(false);
+
+        $this->min(5, 7)->shouldReturn(false);
+
+        $this->min(5, 5)->shouldReturn(true);
+
+        $this->min(5, 3)->shouldReturn(true);
+    }
+
 }
 
