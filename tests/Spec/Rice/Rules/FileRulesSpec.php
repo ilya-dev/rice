@@ -46,5 +46,12 @@ class FileRulesSpec extends ObjectBehavior {
         $this->file(__FILE__)->shouldReturn(true);
     }
 
+    function it_checks_whether_a_path_is_readable()
+    {
+        $this->readable(null)->shouldReturn(false);
+
+        $this->readable(__FILE__)->shouldReturn(true);
+    }
+
 }
 

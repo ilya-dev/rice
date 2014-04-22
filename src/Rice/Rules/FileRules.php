@@ -46,5 +46,16 @@ class FileRules {
         return \is_string($path) and \is_file($path);
     }
 
+    /**
+     * Determine whether the (destination) path is readable.
+     *
+     * @param mixed $path
+     * @return boolean
+     */
+    public function readable($path)
+    {
+        return \is_string($path) and \is_readable($path);
+    }
+
 }
 
