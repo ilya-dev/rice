@@ -15,6 +15,21 @@ class StringRules {
     }
 
     /**
+     * Check whether the $string ends with the $sub string.
+     *
+     * @param mixed $string
+     * @param string $sub
+     * @return boolean
+     */
+    public function ends($string, $sub)
+    {
+        $index = \mb_strlen($string, \mb_detect_encoding($string))
+                 - \mb_strlen($sub, \mb_detect_encoding($sub));
+
+        return ($index) == \mb_strpos($string, $sub, 0, \mb_detect_encoding($string));
+    }
+
+    /**
      * Check whether the $regex matches the $string.
      *
      * @param mixed $string

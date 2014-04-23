@@ -42,7 +42,7 @@ Currently I am working on the first release of Rice.
   + charset `[done]`
   + contains
   + in
-  + ends
+  + ends `[done]`
   + starts `[done]`
   + length 
   + regex `[done]`

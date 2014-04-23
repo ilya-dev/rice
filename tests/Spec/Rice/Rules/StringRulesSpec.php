@@ -47,5 +47,12 @@ class StringRulesSpec extends ObjectBehavior {
         $this->starts('foobar', 'foo')->shouldReturn(true);
     }
 
+    function it_checks_whether_the_string_ends_with_the_substring()
+    {
+        $this->ends('foobar', 'foo')->shouldReturn(false);
+
+        $this->ends('foobar', 'bar')->shouldReturn(true);
+    }
+
 }
 
