@@ -37,7 +37,7 @@ Currently I am working on the first release of Rice.
 
 + **String**
   + lowercase `[done]`
-  + uppercase
+  + uppercase `[done]`
   + between
   + charset `[done]`
   + contains

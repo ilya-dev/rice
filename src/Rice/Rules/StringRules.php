@@ -37,5 +37,16 @@ class StringRules {
         return ($string) == \mb_strtolower($string, \mb_detect_encoding($string));
     }
 
+    /**
+     * Check whether the $string consists of uppercase symbols only.
+     *
+     * @param mixed $string
+     * @return boolean
+     */
+    public function uppercase($string)
+    {
+        return ($string) == \mb_strtoupper($string, \mb_detect_encoding($string));
+    }
+
 }
 

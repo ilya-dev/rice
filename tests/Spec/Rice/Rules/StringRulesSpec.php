@@ -33,5 +33,12 @@ class StringRulesSpec extends ObjectBehavior {
         $this->lowercase('dfsgsgsbsf')->shouldReturn(true);
     }
 
+    function it_checks_whether_the_string_is_all_uppercase()
+    {
+        $this->uppercase('gkjLGBosbg')->shouldReturn(false);
+
+        $this->uppercase('JGGJGJGJGJ')->shouldReturn(true);
+    }
+
 }
 
