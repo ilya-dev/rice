@@ -44,8 +44,8 @@ Currently I am working on the first release of Rice.
   + in
   + ends
   + starts
-  + length
-  + regex
+  + length 
+  + regex `[done]`
 
 + **Array**
   + contains
