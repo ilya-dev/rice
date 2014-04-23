@@ -10,5 +10,14 @@ class StringRulesSpec extends ObjectBehavior {
         $this->shouldHaveType('Rice\Rules\StringRules');
     }
 
+    function it_checks_whether_a_string_matches_the_regex()
+    {
+        $regex = '/^[a-z]{5}$/i';
+
+        $this->regex('av5gG', $regex)->shouldReturn(false);
+
+        $this->regex('LfAeg', $regex)->shouldReturn(true);
+    }
+
 }
 
