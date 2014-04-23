@@ -14,5 +14,17 @@ class StringRules {
         return (boolean) \preg_match($regex, $string);
     }
 
+    /**
+     * Compare the $charset to the real charset of $string.
+     *
+     * @param mixed $string
+     * @param string $charset
+     * @return boolean
+     */
+    public function charset($string, $charset)
+    {
+        return \mb_detect_encoding($string) == $charset;
+    }
+
 }
 

@@ -39,7 +39,7 @@ Currently I am working on the first release of Rice.
   + lowercase
   + uppercase
   + between
-  + charset
+  + charset `[done]`
   + contains
   + in
   + ends

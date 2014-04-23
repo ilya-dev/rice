@@ -19,5 +19,12 @@ class StringRulesSpec extends ObjectBehavior {
         $this->regex('LfAeg', $regex)->shouldReturn(true);
     }
 
+    function it_checks_the_charset_of_string()
+    {
+        $this->charset('foo', 'dumb-charset')->shouldReturn(false);
+
+        $this->charset('foo', 'ASCII')->shouldReturn(true);
+    }
+
 }
 
