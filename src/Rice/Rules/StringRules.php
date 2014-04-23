@@ -3,6 +3,18 @@
 class StringRules {
 
     /**
+     * Check whether the $string starts with the $sub string.
+     *
+     * @param mixed $string
+     * @param string $sub
+     * @return boolean
+     */
+    public function starts($string, $sub)
+    {
+        return 0 == \mb_strpos($string, $sub, 0, \mb_detect_encoding($string));
+    }
+
+    /**
      * Check whether the $regex matches the $string.
      *
      * @param mixed $string

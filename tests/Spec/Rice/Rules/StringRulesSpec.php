@@ -40,5 +40,12 @@ class StringRulesSpec extends ObjectBehavior {
         $this->uppercase('JGGJGJGJGJ')->shouldReturn(true);
     }
 
+    function it_checks_whether_the_string_starts_with_the_substring()
+    {
+        $this->starts('foobar', 'bar')->shouldReturn(false);
+
+        $this->starts('foobar', 'foo')->shouldReturn(true);
+    }
+
 }
 

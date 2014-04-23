@@ -43,7 +43,7 @@ Currently I am working on the first release of Rice.
   + contains
   + in
   + ends
-  + starts
+  + starts `[done]`
   + length 
   + regex `[done]`
 
