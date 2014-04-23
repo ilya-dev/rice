@@ -58,7 +58,7 @@ Currently I am working on the first release of Rice.
   + attribute `[done]` 
 
 + **Date**
-  + between
+  + between `[done]`
 
 + **File**
   + directory `[done]`
