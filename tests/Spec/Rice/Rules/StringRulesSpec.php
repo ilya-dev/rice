@@ -26,5 +26,12 @@ class StringRulesSpec extends ObjectBehavior {
         $this->charset('foo', 'ASCII')->shouldReturn(true);
     }
 
+    function it_checks_whether_the_string_is_all_lowercase()
+    {
+        $this->lowercase('fdsGGfggFS')->shouldReturn(false);
+
+        $this->lowercase('dfsgsgsbsf')->shouldReturn(true);
+    }
+
 }
 

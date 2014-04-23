@@ -26,5 +26,16 @@ class StringRules {
         return \mb_detect_encoding($string) == $charset;
     }
 
+    /**
+     * Check whether the $string consists of lowercase symbols only.
+     *
+     * @param mixed $string
+     * @return boolean
+     */
+    public function lowercase($string)
+    {
+        return ($string) == \mb_strtolower($string, \mb_detect_encoding($string));
+    }
+
 }
 

@@ -36,7 +36,7 @@ Currently I am working on the first release of Rice.
   + square `[done]`
 
 + **String**
-  + lowercase
+  + lowercase `[done]`
   + uppercase
   + between
   + charset `[done]`
