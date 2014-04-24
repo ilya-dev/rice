@@ -28,5 +28,12 @@ class ArrayRulesSpec extends ObjectBehavior {
         $this->key([], 'bar')->shouldReturn(false);
     }
 
+    function it_compares_the_length_of_the_array_to_the_given_length()
+    {
+        $this->length([1, 2, 3], 2)->shouldReturn(false);
+
+        $this->length([1, 2, 3], 3)->shouldReturn(true);
+    }
+
 }
 

@@ -48,7 +48,7 @@ Currently I am working on the first release of Rice.
 
 + **Array**
   + in `[done]`
-  + length
+  + length `[done]`
   + key `[done]`
 
 + **Object**

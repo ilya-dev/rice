@@ -26,5 +26,17 @@ class ArrayRules {
         return \array_key_exists($key, $array);
     }
 
+    /**
+     * Compare the length of the array to the given length.
+     *
+     * @param mixed $array
+     * @param integer $length
+     * @return boolean
+     */
+    public function length($array, $length)
+    {
+        return \count($array) == $length;
+    }
+
 }
 
