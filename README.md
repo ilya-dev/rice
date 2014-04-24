@@ -67,7 +67,7 @@ Currently I am working on the first release of Rice.
   + uploaded `[done]`
 
 + **Other**
-  + email
+  + email `[done]`
   + ip
   + domain
   + json

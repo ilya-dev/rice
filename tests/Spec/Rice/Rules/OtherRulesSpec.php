@@ -21,5 +21,16 @@ class OtherRulesSpec extends ObjectBehavior {
         $this->mac('3D-F2-C9-A6-B3-4F')->shouldReturn(true);
     }
 
+    function it_detects_an_email_address()
+    {
+        $this->email('some-complex-email')->shouldReturn(false);
+
+        $this->email('-argh@wow')->shouldReturn(false);
+
+        $this->email('lol42@bar.foo')->shouldReturn(true);
+
+        $this->email('foo-bar@hey.wow.com')->shouldReturn(true);
+    }
+
 }
 
