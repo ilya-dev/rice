@@ -17,5 +17,16 @@ class ArrayRulesSpec extends ObjectBehavior {
         $this->in(['foo', null], 'foo')->shouldReturn(true);
     }
 
+    function it_checks_whether_the_array_has_the_key()
+    {
+        $this->key([1, 2, 3], 1)->shouldReturn(true);
+
+        $this->key([1, 2, 3], 5)->shouldReturn(false);
+
+        $this->key(['foo' => 'bar'], 'foo')->shouldReturn(true);
+
+        $this->key([], 'bar')->shouldReturn(false);
+    }
+
 }
 

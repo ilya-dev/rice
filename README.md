@@ -49,7 +49,7 @@ Currently I am working on the first release of Rice.
 + **Array**
   + in `[done]`
   + length
-  + key
+  + key `[done]`
 
 + **Object**
   + length `[done]`
