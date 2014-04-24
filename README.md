@@ -68,7 +68,7 @@ Currently I am working on the first release of Rice.
 
 + **Other**
   + email `[done]`
-  + ip
+  + ip `[done]`     
   + domain
   + json `[done]`
   + phone

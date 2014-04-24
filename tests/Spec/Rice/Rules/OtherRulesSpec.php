@@ -39,5 +39,14 @@ class OtherRulesSpec extends ObjectBehavior {
         $this->json('{"foo": "bar"}')->shouldReturn(true);
     }
 
+    function it_detects_a_valid_IP_address()
+    {
+        $this->ip('123.51.lolwhat.124')->shouldReturn(false);
+
+        $this->ip('245.32.43.')->shouldReturn(false);
+
+        $this->ip('214.43.52.184')->shouldReturn(true);
+    }
+
 }
 

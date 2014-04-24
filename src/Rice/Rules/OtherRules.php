@@ -39,5 +39,16 @@ class OtherRules {
         return (\json_last_error() == JSON_ERROR_NONE);
     }
 
+    /**
+     * Determine whether the given string is a valid IP address.
+     *
+     * @param mixed $address
+     * @return boolean
+     */
+    public function ip($address)
+    {
+        return (boolean) \filter_var($address, FILTER_VALIDATE_IP);
+    }
+
 }
 
