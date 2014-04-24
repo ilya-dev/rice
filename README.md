@@ -72,7 +72,7 @@ Currently I am working on the first release of Rice.
   + domain
   + json
   + phone
-  + mac
+  + mac `[done]`
 
 ## Additional information
 
