@@ -70,7 +70,7 @@ Currently I am working on the first release of Rice.
   + email `[done]`
   + ip
   + domain
-  + json
+  + json `[done]`
   + phone
   + mac `[done]`
 

@@ -32,5 +32,12 @@ class OtherRulesSpec extends ObjectBehavior {
         $this->email('foo-bar@hey.wow.com')->shouldReturn(true);
     }
 
+    function it_detects_a_valid_JSON_string()
+    {
+        $this->json('{"wow.such": }')->shouldReturn(false);
+
+        $this->json('{"foo": "bar"}')->shouldReturn(true);
+    }
+
 }
 

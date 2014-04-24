@@ -26,5 +26,18 @@ class OtherRules {
         return (boolean) \filter_var($address, FILTER_VALIDATE_EMAIL);
     }
 
+    /**
+     * Determine whether the input is a valid JSON string.
+     *
+     * @param mixed $input
+     * @return boolean
+     */
+    public function json($input)
+    {
+        \json_decode($input);
+
+        return (\json_last_error() == JSON_ERROR_NONE);
+    }
+
 }
 
