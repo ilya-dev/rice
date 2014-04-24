@@ -40,7 +40,6 @@ Currently I am working on the first release of Rice.
   + uppercase `[done]`
   + between
   + charset `[done]`
-  + contains
   + in
   + ends `[done]`
   + starts `[done]`
@@ -48,7 +47,6 @@ Currently I am working on the first release of Rice.
   + regex `[done]`
 
 + **Array**
-  + contains
   + in
   + length
   + key
