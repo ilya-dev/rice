@@ -48,5 +48,12 @@ class OtherRulesSpec extends ObjectBehavior {
         $this->ip('214.43.52.184')->shouldReturn(true);
     }
 
+    function it_detects_a_valid_URL_address()
+    {
+        $this->url('secret-porn-collection')->shouldReturn(false);
+
+        $this->url('http://foo.bar/baz.wow?so=lol')->shouldReturn(true);
+    }
+
 }
 

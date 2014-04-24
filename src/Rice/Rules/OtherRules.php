@@ -50,5 +50,16 @@ class OtherRules {
         return (boolean) \filter_var($address, FILTER_VALIDATE_IP);
     }
 
+    /**
+     * Determine whether the given string is a valid URL address.
+     *
+     * @param mixed $address
+     * @return boolean
+     */
+    public function url($address)
+    {
+        return (boolean) \filter_var($address, FILTER_VALIDATE_URL);
+    }
+
 }
 
