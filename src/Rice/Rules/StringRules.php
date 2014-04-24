@@ -15,6 +15,21 @@ class StringRules {
     }
 
     /**
+     * Check whether the length of the string fits the range.
+     *
+     * @param mixed $string
+     * @param integer $min
+     * @param integer $max
+     * @return boolean
+     */
+    public function between($string, $min, $max)
+    {
+        $length = \mb_strlen($string, \mb_detect_encoding($string));
+
+        return ($min <= $length) and ($max >= $length);
+    }
+
+    /**
      * Check whether the $string has the $sub string.
      *
      * @param mixed $string

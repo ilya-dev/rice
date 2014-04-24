@@ -68,5 +68,14 @@ class StringRulesSpec extends ObjectBehavior {
         $this->length('foobar', 6)->shouldReturn(true);
     }
 
+    function it_checks_whether_the_length_of_the_string_fits_the_range()
+    {
+        $this->between('foobar', 7, 6)->shouldReturn(false);
+
+        $this->between('foobar', 3, 5)->shouldReturn(false);
+
+        $this->between('foobar', 3, 9)->shouldReturn(true);
+    }
+
 }
 
