@@ -43,7 +43,7 @@ Currently I am working on the first release of Rice.
   + in `[done]`
   + ends `[done]`
   + starts `[done]`
-  + length 
+  + length `[done]` 
   + regex `[done]`
 
 + **Array**

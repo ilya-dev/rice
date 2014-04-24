@@ -61,5 +61,12 @@ class StringRulesSpec extends ObjectBehavior {
         $this->in('foobarbaz', 'bar')->shouldReturn(true);
     }
 
+    function it_checks_whether_the_length_of_the_string_is_equal_to_length()
+    {
+        $this->length('foobar', 5)->shouldReturn(false);
+
+        $this->length('foobar', 6)->shouldReturn(true);
+    }
+
 }
 

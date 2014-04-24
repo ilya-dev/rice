@@ -3,6 +3,18 @@
 class StringRules {
 
     /**
+     * Check whether the length of the $string is equal to $length.
+     *
+     * @param mixed $string
+     * @param integer $length
+     * @return boolean
+     */
+    public function length($string, $length)
+    {
+        return \mb_strlen($string, \mb_detect_encoding($string)) == $length;
+    }
+
+    /**
      * Check whether the $string has the $sub string.
      *
      * @param mixed $string
