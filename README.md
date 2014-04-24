@@ -47,7 +47,7 @@ Currently I am working on the first release of Rice.
   + regex `[done]`
 
 + **Array**
-  + in
+  + in `[done]`
   + length
   + key
 

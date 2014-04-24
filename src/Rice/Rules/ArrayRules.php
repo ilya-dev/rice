@@ -2,7 +2,17 @@
 
 class ArrayRules {
 
-
+    /**
+     * Determine whether the array contains the value.
+     *
+     * @param mixed $array
+     * @param mixed $value
+     * @return boolean
+     */
+    public function in($array, $value)
+    {
+        return \in_array($value, $array, true);
+    }
 
 }
 
