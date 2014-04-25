@@ -4,7 +4,7 @@ Rice is a validation engine for PHP.
 
 ## Development
 
-Currently I am working on the first release of Rice.
+**No more. This project is closed.**
 
 ### Validators [0.1.0]
 
